@@ -1,0 +1,235 @@
+:root {
+    --dark: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --gray: #6b7280;
+    --light: #eee;
+    --pink: #ec4899;
+    --purple: #8b5cf6;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'fire sans', sans-serif;
+}
+
+body {
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--light);
+    color: #fff;
+    margin: 20px;
+}
+
+.h1 {
+    text-align: center;
+    color: var(--darkest);
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+    color: var(--darkest)
+}
+
+header {
+    padding: 2rem, 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: var(--gray);
+}
+
+#new-form {
+    display: flex;
+}
+
+input,
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#new-input {
+    flex: 1 1 0%;
+    background-color: var(--darkest);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--light);
+    font-size: 1.25rem;
+    animation-name: example;
+    animation-duration: 20s;
+}
+
+@keyframes example {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: black;
+    }
+
+    100% {
+        background-color: white;
+    }
+
+    100% {
+        background-color: orange;
+    }
+
+    100% {
+        background-color: brown;
+    }
+
+    100% {
+        background-color: maroon;
+    }
+
+    100% {
+        background-color: crimson;
+    }
+
+    100% {
+        background-color: coral;
+    }
+}
+
+::placeholder {
+    color: white;
+}
+
+#new-submit {
+    color: var(--pink);
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#new-submit:hover {
+    opacity: 0.8;
+}
+
+#new-submit:active {
+    opacity: 0.6;
+}
+
+main {
+    flex: 1 1 0%;
+    padding: 1rem 2rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.task-list {
+    padding: 1rem;
+}
+
+.task-list h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+
+#Missions .task {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkest);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    font-size: 30px;
+}
+
+#Missions .task .content {
+    flex: 1 1 0%;
+    font-size: 30px;
+}
+
+#Missions .task .content .text {
+    color: var(--light);
+    font-size: 1.125rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+#Missions .task .content .text:not(:read-only) {
+    font-size: 40px;
+    color: var(--pink);
+}
+
+#Missions .task .action {
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.task .action button {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.task .action button:hover {
+    opacity: 0.8;
+}
+
+.task .action button:active {
+    opacity: 0.6;
+}
+
+.task .action .edit {
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.task .action .delete {
+    color: crimson;
+    cursor: pointer;
+}
+
+.content {
+    background-color: #111827;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 5px;
+}
+
+.text {
+    color: #fff;
+}
